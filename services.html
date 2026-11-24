@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        
+        <title>Mutts Makeover</title>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+        <link rel="stylesheet" href="./resources/style.css">
+        <meta charset="UTF-8">
+        <script src="./resources/script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <img id="logo-img" src="./resources/images/mutts-logo.png" alt="logo">
+            <div id="header-text">
+                <div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="header-btns">
+                    <button class="login-btn">Login</button>
+                    <button id="signup-btn"><a href="signup.html">Sign Up</a></button>
+                    <button id="logout-btn">Log Out</button>
+                    <button id="account-btn"><a href="account.html"><i class="fa-regular fa-circle-user"></i></a></button>
+                </div>
+            </div>
+        </header>
+        <div id="blur-overlay">
+            <div id="login-popup">
+                <form id="login-form">
+                    <button type="button" id="login-close"><i class="fa-regular fa-circle-xmark"></i></button>
+                    <h2>Login</h2>
+                    <p>Portfolio demo: Enter any email & password to preview the logged-in user experience.</p>
+
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email" autocomplete="email" placeholder="john.doe@example.com" required>
+
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" name="password" autocomplete="current-password" placeholder="••••••••" required>
+
+                    <button type="submit" id="login-submit">Login</button>
+                </form>
+            </div>
+        </div>
+        <div id="services-body" class="page-body">
+            <h1>Our services</h1>
+            <div id="service-list">
+                <ul>
+                    <li>Bathing<p>Does your dog need a good scrubbing?</p></li>
+                    <li>Brushing<p>Keep your dog's coat looking its best with our professional brushing services.</p></li>
+                    <li>Haircut<p>Give your dog a fresh new look with our custom haircuts.</p></li>
+                    <li>Nail trimming<p>Keep your dog's nails at a safe length with our nail trimming service.</p></li>
+                    <li>Ear cleaning<p>Keep your dog's ears clean and healthy with our ear cleaning service.</p></li>
+                    <li>Teeth brushing<p>Maintain your dog's oral health with our regular teeth brushing service.</p></li>
+                </ul>
+                <button id="book-btn"><a href="bookings.html">Book a service</a></button>
+            </div>
+            
+        </div>
+        <footer>
+            <p>This website is a portfolio project built for educational purposes only. It is not an actual dog grooming business, and no real appointments can be booked.</p>
+        </footer>
+    </body>
+</html>
